@@ -1,0 +1,122 @@
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+.sobre__box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.sobre__content {
+    width: 570px;
+    height: 529px;
+    position: relative;
+}
+.sobre__content figure {
+    position: absolute;
+}
+
+.sobre__content figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sobre__content figure#sobre-img1 {
+    width: 310px;
+    height: 192px;
+    top: 200px;
+    left: 0;
+    margin: 0;
+}
+.sobre__content figure#sobre-img2 {
+    width: 278px;
+    height: 310px;
+    top: 0;
+    left: 230px;
+    z-index: 2;
+    margin: 0;
+}
+.sobre__content figure#sobre-img3 {
+    width: 229px;
+    height: 255px;
+    top: 255px;
+    left: 330px;
+    z-index: 3;
+    margin: 0;
+}
+.sobre__text {
+    width: 464px;
+    height: 529px;
+}
+
+
+
+.sobre__text .sub__title {
+   font-size: 3rem;
+   font-weight: 700;
+   line-height: 3.5rem; 
+   margin-bottom: 2rem;
+   margin-top: 1rem;
+}
+.sobre__text .sub__title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 5rem;
+    background-color: #06121E;
+}
+.sobre__text article {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    color: #06121E; 
+}
+
+@media (max-width:1120px) {
+    .sobre__box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre__content {
+        width: 370px;  
+    }
+    .sobre__text {
+        width: 364px;
+    }
+    .sobre__content figure#sobre-img1 {
+        width: 365px;
+        height: 247px;
+        top: 200px;
+        left: -135px;
+
+    }
+    .sobre__content figure#sobre-img2 {
+        width: 308px;
+        height: 340px;
+        top: 20px;
+        left: 115px;
+    }
+    .sobre__content figure#sobre-img3 {
+        width: 260px;
+        height: 340px;
+        top: 255px;
+        left: 240px;
+    }
+    .sobre__text {
+        max-height: 80%;
+    }
+    .sobre__text article {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+}

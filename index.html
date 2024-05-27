@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Sport+</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="img__box">
+                <img src="assets/images/logo.svg" class="navbar__logo" alt="Logo Esportes+"/>
+            </div>
+            <button class="nav__button" data-nav="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav__links " data-nav="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="slider__container">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1" class="radio__slides">
+                    <input type="radio" name="radio-btn" id="radio2" class="radio__slides">
+                    <input type="radio" name="radio-btn" id="radio3" class="radio__slides">
+                    
+                    <div class="slide first">
+                        <img src="assets/images/nadador-slider.jpeg" alt="Nadador">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/volei-slider.jpeg" alt="Jogo de vôlei">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/futFem-slider.jpeg" alt="Jogo de Futebol feminino">
+                    </div>
+                    <div class="navigation__auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+                <div class="manual__navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <div class="sobre__box container">
+                <div class="sobre__content">
+                    <figure id="sobre-img1">
+                        <img src="assets/images/sobre-img1.jpeg" alt="Musculação">
+                    </figure>
+                    <figure id="sobre-img2">
+                        <img src="assets/images/sobre-img2.jpeg" alt="Natação">
+                    </figure>
+                    <figure id="sobre-img3">
+                        <img src="assets/images/sobre-img3.jpeg" alt="Vôlei">
+                    </figure>
+                </div>
+                <div class="sobre__text">
+                    <h2 class="sub__title">Sobre</h2>
+                    <article>A Academia Esportes+ é um centro esportivo de ponta localizado no coração da cidade, oferecendo instalações modernas e uma ampla gama de atividades físicas. Com treinadores experientes e programas personalizados, a academia atende tanto atletas profissionais quanto iniciantes. Suas instalações incluem piscinas olímpicas, quadras poliesportivas e salas de musculação de última geração. A Altitude se destaca pela integração de tecnologias avançadas no monitoramento de desempenho e bem-estar dos seus membros.</article>
+                </div>
+            </div>
+            
+        </section>
+        <section class="duvidas__frequentes" id="duvidas">
+            <div class="side-a-side">
+                <h2 class="sub__title">Dúvidas <br>Frequentes</h2> 
+            
+                <dl class="lista__duvidas" data-animation="accordion">
+                    <div class="question">
+                        <dt>Esportes disponíveis e suas modalidades?</dt>
+                        <dd>Oferecemos uma ampla variedade de esportes, incluindo natação, musculação, futebol e vôlei.</dd>
+                    </div>
+                    
+                    <div class="question">
+                        <dt>Agenda de horários para treinos?</dt>
+                        <dd>Nossa agenda varia de acordo com a demanda, mas temos horários matutinos, vespertinos e noturnos para a maioria das modalidades.</dd>
+                    </div>
+                    
+                    <div class="question">
+                        <dt>Processo de matrícula e pagamento?</dt>
+                        <dd>O processo de matrícula é simples e pode ser feito pessoalmente em nossa recepção. Oferecemos diversas opções de pagamento, incluindo mensalidades e planos trimestrais.</dd>
+                    </div>
+                    
+                    <div class="question">
+                        <dt>Qualificação dos instrutores para cada esporte?</dt>
+                        <dd>Nossos instrutores são altamente qualificados e possuem certificações reconhecidas em suas respectivas áreas. Eles estão dedicados a fornecer orientação especializada e motivadora.</dd>
+                    </div>
+                    
+    
+                </dl>
+            </div>
+                
+        </section>
+        
+        
+        <section class="contato" id="contato">
+           
+            <div class="contato-local container">
+                <title>Esportes+</title> <h2 class="sub__title">Fale Conosco</h2>
+                <div class="speak__area">
+                    <div class="contato__side">
+                    
+                        <form name="contato">
+    
+                            <div class="span-side">
+                                <span>
+                                <label for="nome">Nome</label>
+                                <input type="text" placeholder="Seu nome" required>
+                            </span>
+                            <span>
+                                <label for="telefone">Telefone</label>
+                                <input type="text" placeholder="(84)99999-9999" required>
+                            </span>
+                            </div>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="contato@gmail.com" required>
+    
+                            <label for="textarea">Mensagem</label>
+                            <textarea name="textarea" id="textarea" placeholder="O que você precisa?"></textarea>
+                            <button type="submit">enviar mensagem</button>
+                        </form>
+                    </div>
+    
+                    <div class="local__side">
+                        <div class="endereco">
+                            <img src="assets/images/pin.svg" alt="Pin localização">
+                            <p>Av. Senador Salgado Filho, 3000, Lagoa Nova,
+                                Natal - RN</p>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15876.569914848684!2d-35.22829816044925!3d-5.835531200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ffe2d085e121%3A0x29edcc001e615018!2sUFRN!5e0!3m2!1spt-BR!2sbr!4v1716513292611!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="social__media">
+                            <img src="assets/images/email.svg" alt="email">
+                            <img src="assets/images/insta.svg" alt="instagram">
+                            <img src="assets/images/face.svg" alt="facebook">
+                            <img src="assets/images/youtube.svg" alt="youtube">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__copy container">
+            <img src="assets/images/logo.svg" class="navbar__logo" alt="Logo Esportes+"/>
+            <div class="endereco">
+                <img src="assets/images/pin.svg" alt="Pin localização">
+                <p>Av. Senador Salgado Filho, 3000, Lagoa Nova,
+                    Natal - RN</p>
+            </div>
+            <div class="email">
+                <img src="assets/images/email.svg" alt="email contato">
+                <p>contato@esporteplus.com <br>
+                    assistencia@esporteplus.com</p>
+            </div>
+            <div class="telefone-social">
+                <div class="telefone">
+                    <img src="assets/images/phone.svg" alt="Telefone">
+                    <p>(84) 99999-9999</p>
+                </div>
+                <div class="social__media">
+                    <img src="assets/images/email.svg" alt="email">
+                    <img src="assets/images/insta.svg" alt="instagram">
+                    <img src="assets/images/face.svg" alt="facebook">
+                    <img src="assets/images/youtube.svg" alt="youtube">
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
