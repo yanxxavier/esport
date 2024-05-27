@@ -2,16 +2,17 @@ footer {
     background-color:#06121E;
     min-height: 15vh;
     width: 100%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
    
 }
 
 .footer__copy {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+ display: flex;
+ justify-content: space-between;
+ width: 1440px;
     
     
 }
