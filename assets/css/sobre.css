@@ -80,33 +80,31 @@
 @media (max-width:1120px) {
     .sobre__box {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-    .sobre__content {
-        width: 370px;  
-    }
+    
     .sobre__text {
         width: 364px;
+        height: 429px;
     }
     .sobre__content figure#sobre-img1 {
-        width: 365px;
-        height: 247px;
+        width: 345px;
+        height: 227px;
         top: 200px;
-        left: -135px;
+        left: -25px;
 
     }
     .sobre__content figure#sobre-img2 {
-        width: 308px;
-        height: 340px;
-        top: 20px;
-        left: 115px;
+        width: 288px;
+        height: 320px;
+        top: 40px;
+        left: 200px;
     }
     .sobre__content figure#sobre-img3 {
-        width: 260px;
-        height: 340px;
-        top: 255px;
-        left: 240px;
+        width: 240px;
+        height: 300px;
+        top: 235px;
+        left: 350px;
     }
     .sobre__text {
         max-height: 80%;
@@ -117,6 +115,68 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
+    .sobre__content {
+        width: 300px;
+        height: 290px;
+    }
+    .sobre__text {
+        width: 300px;
+    }
+    
+    .sobre__content figure#sobre-img1 {
+        width: 212px;
+        height: 132px;
+        top: 140px;
+        left: -50px;
 
-}
+    }
+    .sobre__content figure#sobre-img2 {
+        width: 190px;
+        height: 212px;
+        top: 0;
+        left: 75px;
+    }
+    .sobre__content figure#sobre-img3 {
+        width: 156px;
+        height: 175px;
+        top: 130px;
+        left: 170px;
+    }
+    .sobre__text .sub__title {
+        font-size: 2rem;
+    }
+    .sobre__text .sub__title::after {
+        width: 3.5rem;
+    }
+    .sobre__text {
+        max-height: 50%;
+        mar
+    }
+   
+    .sobre__text article {
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+ }
+ @media (max-width: 400px) {
+    .sobre__content figure#sobre-img1 {
+        width: 192px;
+        height: 102px;
+        top: 165px;
+        left: -20px;
+
+    }
+    .sobre__content figure#sobre-img2 {
+        width: 160px;
+        height: 182px;
+        top: 50px;
+        left: 105px;
+    }
+    .sobre__content figure#sobre-img3 {
+        width: 126px;
+        height: 145px;
+        top: 165px;
+        left: 190px;
+    }
+ }
