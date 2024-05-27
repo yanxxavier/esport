@@ -1,4 +1,4 @@
-import initClickOutside from './clickOutside.js'
+import initClickOutside from '../modules/clickOutside.js'
 
 
 export default function initMenuMobile() {
