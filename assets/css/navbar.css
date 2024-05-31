@@ -3,7 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     margin: 0;
@@ -131,7 +134,7 @@ header {
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
-        height: 74.5vh;
+        height: 79vh;
         width: 30%;
         list-style: none;
         position: absolute;

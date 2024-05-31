@@ -248,7 +248,7 @@
     }
     
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .local__side iframe {
      
         max-width: 300px;

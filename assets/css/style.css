@@ -6,3 +6,15 @@
 @import 'sobre.css';
 @import 'contato.css';
 @import 'footer.css';
+
+
+[data-animation = "scroll"] {
+    opacity: 0;
+    transition: .5s;
+    transform: translate3d(-30px, 0, 0);
+}
+[data-animation = "scroll"].animation-scroll {
+    opacity: 1;
+    transition: .5s;
+    transform: translate3d(0, 0, 0);
+}
