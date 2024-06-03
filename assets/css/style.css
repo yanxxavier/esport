@@ -6,6 +6,8 @@
 @import 'sobre.css';
 @import 'contato.css';
 @import 'footer.css';
+@import 'servicos.css';
+@import 'modal.css';
 
 
 [data-animation = "scroll"] {

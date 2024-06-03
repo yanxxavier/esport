@@ -1,0 +1,88 @@
+.modal__box {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal__box.ativo {
+    display: flex;
+
+}
+.modal {
+    background-color: #F4F4F4;
+    position: relative;
+    padding: 3rem;
+    row-gap: 2rem;
+    border-radius: 5px;
+}
+.ativo .modal {
+    animation:  modal .3s forwards;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0); 
+    }
+}
+.modal .close {
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    cursor: pointer;
+}
+.modal h3 {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modal form label {
+    align-self: flex-start;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #06121E;
+}
+
+.modal input {
+    width: 100%;
+    padding: .5rem .3rem;
+    border: none;
+    background-color: #E8E2E2;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: .7rem;
+
+}
+.modal form button {
+    padding: .9rem 2.5rem;
+    background: linear-gradient(to right, #085EB3 0%, #103356 50%,#06121E
+    100% );
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 1rem;
+}

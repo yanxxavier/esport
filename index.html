@@ -21,7 +21,7 @@
             <ul class="nav__links " data-nav="links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="">Serviços</a></li>
+                <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#duvidas">Dúvidas</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -77,6 +77,28 @@
                 </div>
             </div>
             
+        </section>
+        <section id="servicos" class="servicos">
+            <div class="content container">
+                <h2 class="sub__title">Serviços</h2>
+                
+                    <div class="carrossel"> 
+                        <div class="card">
+                            <img src="assets/images/servicos1.jpeg" alt="corredor careca">
+                        </div>
+                        <div class="card ativo">
+                            <h3>Assessoria e Consultoria Sport +</h3>
+                            <p>A consultoria e assessoria em processo seletivo é uma área de atuação que visa auxiliar empresas e organizações na seleção de novos colaboradores, garantindo que o processo seja realizado de forma eficiente, justa e transparente.</p>
+                            <button id="openModal">Solicitar</button>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/servicos2.jpg" alt="corredor careca">
+                        </div>
+                    </div>
+                
+            
+            </div>    
+        
         </section>
         <section class="duvidas__frequentes" id="duvidas" data-animation="scroll">
             <div class="side-a-side">
@@ -185,6 +207,22 @@
             </div>
         </div>
     </footer>
+
+    <section class="modal__box" data-modal="box">
+        <div class="modal">
+            <img src="assets/images/close.svg" alt="close button" class="close" id="close">
+            <h3>Solicitar sua inscrição</h3>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="contato">Contato</label>
+                <input type="text" name="contato" id="contact">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     
 
     <script type="module" src="assets/js/main.js"></script>
