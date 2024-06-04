@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Sport+</title>
@@ -78,26 +79,28 @@
             </div>
             
         </section>
-        <section id="servicos" class="servicos">
-            <div class="content container">
+        <section id="servicos" class="servicos" data-animation="scroll">
+            <div class="container">
                 <h2 class="sub__title">Serviços</h2>
-                
-                    <div class="carrossel"> 
-                        <div class="card">
-                            <img src="assets/images/servicos1.jpeg" alt="corredor careca">
-                        </div>
-                        <div class="card ativo">
-                            <h3>Assessoria e Consultoria Sport +</h3>
-                            <p>A consultoria e assessoria em processo seletivo é uma área de atuação que visa auxiliar empresas e organizações na seleção de novos colaboradores, garantindo que o processo seja realizado de forma eficiente, justa e transparente.</p>
-                            <button id="openModal">Solicitar</button>
-                        </div>
-                        <div class="card">
-                            <img src="assets/images/servicos2.jpg" alt="corredor careca">
-                        </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper card-slider-container">
+                        
+                    <div class="swiper-slide card-principal">
+                        <h3>Assessoria e Consultoria Sport +</h3>
+                        <p>A consultoria e assessoria em processo seletivo é uma área de atuação que visa auxiliar empresas e organizações na seleção de novos colaboradores, garantindo que o processo seja realizado de forma eficiente, justa e transparente.</p>
+                        <button id="openModal">Solicitar</button>
+                    </div>
+                    <div class="swiper-slide card-secundario">
+                        <img src="assets/images/servicos1.jpeg" alt="corredor careca">
+                    </div>
+                    <div class="swiper-slide card-secundario">
+                        <img src="assets/images/servicos2.jpg" alt="corredora no parque">
                     </div>
                 
-            
-            </div>    
+                    </div>
+                <div class="swiper-pagination"></div>
+                </div>
+            </div>
         
         </section>
         <section class="duvidas__frequentes" id="duvidas" data-animation="scroll">
@@ -226,5 +229,6 @@
     
 
     <script type="module" src="assets/js/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
 </body>
 </html>

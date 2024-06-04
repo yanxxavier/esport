@@ -1,128 +1,243 @@
+/*https://bytewebster.com/*/
+/*https://bytewebster.com/*/
+/*https://bytewebster.com/*/
+
+
+
+
 .servicos {
-    height: 100vh;
-    background: radial-gradient(circle, #103356 0%, #06121E 100%);
-    display: flex;
-    justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #103356 0%, #06121E 100%);
 }
-.content {
+.swiper {
+    max-width: 1200px;
+    width: 100%;
+    height: 550px;
+}
+
+.swiper-slide {
+  width: 251px;
+  height: 315px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(5px);
+  border-radius: 10px;
+  background-color: #F4F4F4;
+  align-self: center;
+  
+}
+.swiper-slide img {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    object-fit:inherit;
+    border-radius: 10px;
 }
-.content .sub__title {
-    font-size: 3rem;
+
+.swiper-slide-active {
+  filter: blur(0px);
+  width: 579px;
+  height: 443px;
+  border-radius: 10px;
+  background-color: white;
+ 
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+/* meu CSS */
+.servicos .sub__title {
+    font-size: 3rem;;
     line-height: 3.5rem;
     font-weight: 700;
     color: #F4F4F4;
     width: 100%;
-    text-align: start;
+    align-items: start;
 }
-.content .sub__title::after {
+.servicos .sub__title::after {
     content: '';
     display: block;
     width: 5rem;
     height: 5px;
     background-color: #F4F4F4;
 }
-.carrossel .card {
-    width: 251px;
-    height: 265px;
-    border-radius: 10px;
-    background-color: #F4F4F4;
-    
-}
-.carrossel .card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.carrossel {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-
-.carrossel > :nth-child(2) {
+.card-principal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    row-gap: .8rem;
-}
-.carrossel > :nth-child(2) h3 {
-    font-size: .875rem;
-    line-height: 1.2rem;
-    font-weight: 500;
-    color: #06121E;
-    margin: 0;
-}
-.carrossel > :nth-child(2) p {
-    font-size: .675rem;
-    line-height: .9rem;
-    color: #06121E;
-    text-align: center;
-}
-.carrossel > :nth-child(2) button {
-    padding: .4rem 3rem;
-    border: none;
-    border-radius: 15px;
-    background: linear-gradient(to right, #085EB3 0%, #103356 50%,#06121E
-    100% );
-    font-size: .875rem;
-    line-height: 1rem;
-    font-weight: 700;
-    color: #F4F4F4;  
-}
-.carrossel > :nth-child(2).ativo {
-    width: 547px;
-    height: 361px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.carrossel > :nth-child(2).ativo h3 {
+.card-principal h3 {
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     font-weight: 500;
     color: #06121E;
-    margin: 0;
-    
-}
-.carrossel > :nth-child(2).ativo p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    color: #06121E;
     text-align: center;
-    
 }
-.carrossel > :nth-child(2).ativo button {
+.card-principal p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #06121E;
+    max-width: 500px;
+    text-align: center;
+}
+.card-principal button {
     padding: 1rem 7rem;
-    border: none;
     border-radius: 10px;
-    background: linear-gradient(to right, #085EB3 0%, #103356 50%,#06121E
-    100% );
+    border: transparent;
+    background: linear-gradient(to right, #085EB3 0%, #06121E 100%);
     font-size: 1rem;
     line-height: 1.2rem;
     font-weight: 700;
-    color: #F4F4F4;  
+    color: #F4F4F4;
+    margin-top: 2rem;
     cursor: pointer;
 }
-.carrossel > :nth-child(1).ativo,
-.carrossel > :nth-child(3).ativo {
-    width: 579px;
-    height: 393px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+
+
+
+@media (max-width: 1300px) {
+    
+    
+    .swiper-slide {
+      width: 220px;
+      height: 265px;     
+    }
+    
+    .swiper-slide-active {
+      width: 549px;
+      height: 393px;
+    }  
+    .card-principal h3 {
+        margin: 1rem 0;
+    }
+    .card-principal p {
+        max-width: 400px;
+        margin: 0;
+    }
+    .card-principal button {
+        padding: 1rem 5.5rem;
+       
+    }
+}
+
+
+@media (max-width: 950px) {
+    
+    .card-principal h3 {
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+    }
+    .card-principal p {
+        max-width: 500px;
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        line-height: 1.5rem;
+       
+    }
+    .card-principal button {
+        padding: 1rem 8rem;
+        margin-top: 0;
+       
+    }
+    
+    .swiper-slide {
+      height: 300px;     
+      filter: blur(0px);
+    }
+    .swiper-slide-active {
+        height: 450px;
+      }  
+}
+@media (max-width: 600px) {
+    .servicos .sub__title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: #F4F4F4;
+        width: 100%;
+        align-items: start;
+    }
+    .servicos .sub__title::after {
+        content: '';
+        display: block;
+        width: 3.5rem;
+        height: 5px;
+        background-color: #F4F4F4;
+    }
+    .card-principal h3 {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        margin: 0;
+    }
+    .card-principal p {
+        max-width: 300px;
+        font-size: .925rem;
+        margin: 2rem 0;
+        line-height: 1.05rem;
+       
+    }
+    .card-principal button {
+        padding: 1rem 5rem;
+        margin-top: 0;
+       
+    }
+    
+    .swiper-slide {
+      height: 300px;     
+      filter: blur(0px);
+    }
+    .swiper-slide-active {
+        height: 450px;
+      }  
+}
+
+@media (max-width: 400px) {
+    .card-principal h3 {
+        font-size: .975rem;
+        line-height: 1.1rem;
+        margin: 0;
+    }
+    .card-principal p {
+        max-width: 250px;
+        font-size: .875rem;
+        margin: 2rem 0;
+        line-height: 1rem;
+       
+    }
+    .card-principal button {
+        padding: 1rem 5rem;
+        margin-top: 0;
+       
+    }
+    
+    .swiper-slide {
+      height: 250px;     
+      filter: blur(0px);
+    }
+    .swiper-slide-active {
+        height: 350px;
+      }  
 }

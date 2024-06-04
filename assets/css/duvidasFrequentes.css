@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/waves.png);
+    background-image: url(../images/waves.svg);
     background-repeat:no-repeat;
     background-position: center;
     background-size:cover;
@@ -109,7 +109,10 @@
 
 @media (max-width:1100px) {
     .duvidas__frequentes {
-        background-image: none;
+        background-image: url(../images/right-wave.svg);
+        background-position: right;
+        background-size:contain;
+
     }
     .side-a-side {
         display: flex;
@@ -133,9 +136,6 @@
 
 }
 @media (max-width:700px) {
-    .duvidas__frequentes {
-        background-image: none;
-    }
     .lista__duvidas {
         max-width: 500px;
     }
@@ -143,9 +143,7 @@
 
 }
 @media (max-width:550px) {
-    .duvidas__frequentes {
-        background-image: none;
-    }
+    
     .duvidas__frequentes .sub__title {
         font-size: 1.5rem;
         line-height: 2rem;

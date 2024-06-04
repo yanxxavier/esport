@@ -112,8 +112,38 @@
         line-height: 1.6rem;
     }
 }
+@media (max-width:900px) {
+    .sobre__text .sub__title {
+        margin: 0;
+    }
+    .sobre__text article {
+        margin-top: 1rem;
+    }
+    .sobre__content figure#sobre-img1 {
+        width: 305px;
+        height: 178px;
+        top: 200px;
+        left: 0;
+
+    }
+    .sobre__content figure#sobre-img2 {
+        width: 248px;
+        height: 280px;
+        top: 40px;
+        left: 200px;
+    }
+    .sobre__content figure#sobre-img3 {
+        width: 200px;
+        height: 260px;
+        top: 200px;
+        left: 350px;
+    }
+}
 
 @media (max-width: 650px) {
+    .sobre__box {
+        justify-content: center;
+    }
     .sobre__content {
         width: 300px;
         height: 290px;
@@ -125,55 +155,63 @@
     .sobre__content figure#sobre-img1 {
         width: 212px;
         height: 132px;
-        top: 170px;
+        top: 130px;
         left: -50px;
 
     }
     .sobre__content figure#sobre-img2 {
         width: 190px;
         height: 212px;
-        top: 30px;
+        top: 10px;
         left: 75px;
     }
     .sobre__content figure#sobre-img3 {
         width: 156px;
         height: 175px;
-        top: 160px;
+        top: 120px;
         left: 170px;
     }
     .sobre__text .sub__title {
         font-size: 2rem;
+        margin: 0;
     }
     .sobre__text .sub__title::after {
         width: 3.5rem;
     }
     .sobre__text {
-        max-height: 50%;
+        max-height: -10%;
+        
     }
    
     .sobre__text article {
         font-size: 1.2rem;
         line-height: 1.4rem;
+        margin-top: 1rem;
     }
  }
  @media (max-width: 400px) {
     .sobre__content figure#sobre-img1 {
         width: 192px;
         height: 102px;
-        top: 195px;
+        top: 100px;
         left: -20px;
 
     }
     .sobre__content figure#sobre-img2 {
         width: 160px;
         height: 182px;
-        top: 80px;
+        top: 15px;
         left: 105px;
     }
     .sobre__content figure#sobre-img3 {
         width: 126px;
         height: 145px;
-        top: 195px;
+        top: 100px;
         left: 190px;
+    }
+    .sobre__text article {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-top: 1rem;
     }
  }

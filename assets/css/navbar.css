@@ -16,6 +16,7 @@ body {
 }
 .container {
     max-width: 1250px;
+    width: 100%;
     padding: 0 2rem;
 }
 header {
@@ -85,10 +86,23 @@ header {
         opacity: 1;
     }
 }
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+@media (max-width: 1150px) {
+    .container {
+        max-width: 900px;
+    }
+}
 
 
 
-@media (max-width: 830px) {
+@media (max-width: 950px) {
+    .container {
+        max-width: 670px;
+    }
     .nav__links {
         display: none;
     }
@@ -144,5 +158,16 @@ header {
         right: 0;
         text-align: center;
         animation: showDown .5s forwards;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        max-width: 350px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        max-width: 300px;
     }
 }
