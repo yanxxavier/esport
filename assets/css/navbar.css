@@ -119,12 +119,7 @@ header {
     
     }
     .nav__links a:hover::after {
-       
-        height: 3px;
-        width: 50%;
-      
-        
-        
+       display: none; 
     }
     .nav__button span {
         width: 40px;
@@ -148,7 +143,7 @@ header {
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
-        height: 79vh;
+        height: 75vh;
         width: 30%;
         list-style: none;
         position: absolute;
